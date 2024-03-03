@@ -59,7 +59,7 @@ export function OrgSidebar() {
 				>
 					<Link href='/'>
 						<LayoutDashboard className='h-4 w-4 mr-2' />
-						Team boards
+						Team Boards
 					</Link>
 				</Button>
 				<Button
@@ -75,7 +75,7 @@ export function OrgSidebar() {
 						}}
 					>
 						<Star className='h-4 w-4 mr-2' />
-						Favorite boards
+						Favorite Boards
 					</Link>
 				</Button>
 			</div>
