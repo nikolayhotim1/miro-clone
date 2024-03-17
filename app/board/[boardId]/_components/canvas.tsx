@@ -340,7 +340,6 @@ export function Canvas({ boardId }: CanvasProps) {
 		const layerIdsToColorSelection: Record<string, string> = {}
 		for (const user of selections) {
 			const [connectionId, selection] = user
-
 			for (const layerId of selection) {
 				layerIdsToColorSelection[layerId] =
 					connectionIdToColor(connectionId)
@@ -352,9 +351,6 @@ export function Canvas({ boardId }: CanvasProps) {
 	useEffect(() => {
 		function onKeyDown(e: KeyboardEvent) {
 			switch (e.key) {
-				// case "Backspace":
-				//   deleteLayers();
-				//   break;
 				case 'z': {
 					if (e.ctrlKey || e.metaKey) {
 						if (e.shiftKey) {
